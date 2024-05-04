@@ -1,4 +1,6 @@
-// ignore_for_file: prefer_const_constructors
+// ignore: file_names
+
+// ignore_for_file: file_names
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -9,12 +11,13 @@ import 'package:kiulinks_app/Views/notification_screen.dart';
 import 'package:kiulinks_app/Views/plans_screen.dart';
 import 'package:kiulinks_app/utilities/SizeConfig.dart';
 
-class navigation extends StatefulWidget {
+// ignore: use_key_in_widget_constructors
+class Navigation extends StatefulWidget {
   @override
-  _navigationState createState() => _navigationState();
+  _NavigationState createState() => _NavigationState();
 }
-class _navigationState extends State<navigation> {
-  // String ACCOUNT_ID = "";
+class _NavigationState extends State<Navigation> {
+
   final List<Widget> pages = [
     plans(),
     library_screen(),
